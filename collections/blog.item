@@ -3,7 +3,7 @@
 
   <!--WRAPPER-->
 
-  <article id="post-{id}" class="{@|item-classes}" data-item-id="{id}">
+  <article id="post-{id}" class="{@|item-classes} post" data-item-id="{id}">
 
     <!--POST TILE-->
 
@@ -17,9 +17,7 @@
 
     <!--MAIN CONTENT-->
 
-    <div class="post">
-      {body}
-    </div>
+    {body}
 
     <!--BLOG INJECTION-->
 

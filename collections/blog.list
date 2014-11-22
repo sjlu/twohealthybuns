@@ -45,15 +45,17 @@
 
     <!--EXCERPT OR BODY-->
 
-    {.if excerpt}
-      {excerpt}
-      <a class="link" href="{fullUrl}">Read More</a>
-    {.or}
+    <div class="post-body">
+      {.if excerpt}
+        {excerpt}
+        <a class="link" href="{fullUrl}">Read More</a>
+      {.or}
 
-      <!--MAIN CONTENT-->
-      {body}
+        <!--MAIN CONTENT-->
+        {body}
 
-    {.end}
+      {.end}
+    </div>
 
     <!--BLOG INJECTION-->
 
