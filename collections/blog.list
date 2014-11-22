@@ -43,6 +43,9 @@
       {.end}
     </h1>
 
+    {@|like-button}
+    {@|social-button}
+
     <!--EXCERPT OR BODY-->
 
     <div class="post-body">
@@ -58,19 +61,12 @@
         <a class="tag" href="?tag={@|url-encode}">{@}</a>{.alternates with},
       {.end}
 
-      <!--SHARE AND LIKE-->
-
-      {@|like-button}
-      {@|social-button}
-
+      <!--MAIN CONTENT-->
       {.if excerpt}
         {excerpt}
         <a class="link" href="{fullUrl}">Read More</a>
       {.or}
-
-        <!--MAIN CONTENT-->
         {body}
-
       {.end}
     </div>
 
