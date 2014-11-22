@@ -6,6 +6,9 @@
 
     <!--Include sqs scripts, meta tags, and user content from the code injection tab.-->
     {squarespace-headers}
+    <link href='//fonts.googleapis.com/css?family=Cedarville+Cursive' rel='stylesheet' type='text/css'>
+    <link href='//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+    <link href='//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
   </head>
   <body id="{squarespace.page-id}" class="{squarespace.page-classes}">
 
@@ -24,7 +27,7 @@
               {.end}
             </a>
           </h1>
-          
+
           <!--Site tagline.-->
           {.section siteTagLine}
             <p class="site-tagline">{@}</p>
@@ -53,6 +56,6 @@
 
     <!--Injection point for tracking scripts and user content from the code injection tab.-->
     {squarespace-footers}
-    
+
   </body>
-</html> 
+</html>
