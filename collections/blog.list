@@ -43,8 +43,9 @@
       {.end}
     </h1>
 
-    {@|like-button}
-    {@|social-button}
+    <div class="social">
+      {@|like-button}
+    </div>
 
     <!--EXCERPT OR BODY-->
 
