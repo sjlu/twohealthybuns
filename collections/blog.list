@@ -46,6 +46,23 @@
     <!--EXCERPT OR BODY-->
 
     <div class="post-body">
+      <!--CATEGORIES-->
+
+      {.repeated section categories}
+        <a class="category" href="?category={@|url-encode}">{@}</a>{.alternates with},
+      {.end}
+
+      <!--TAGS-->
+
+      {.repeated section tags}
+        <a class="tag" href="?tag={@|url-encode}">{@}</a>{.alternates with},
+      {.end}
+
+      <!--SHARE AND LIKE-->
+
+      {@|like-button}
+      {@|social-button}
+
       {.if excerpt}
         {excerpt}
         <a class="link" href="{fullUrl}">Read More</a>
@@ -60,23 +77,6 @@
     <!--BLOG INJECTION-->
 
     {postItemInjectCode}
-
-    <!--CATEGORIES-->
-
-    {.repeated section categories}
-      <a class="category" href="?category={@|url-encode}">{@}</a>{.alternates with},
-    {.end}
-
-    <!--TAGS-->
-
-    {.repeated section tags}
-      <a class="tag" href="?tag={@|url-encode}">{@}</a>{.alternates with},
-    {.end}
-
-    <!--SHARE AND LIKE-->
-
-    {@|like-button}
-    {@|social-button}
 
   </article>
 
