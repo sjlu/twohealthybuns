@@ -22,12 +22,12 @@
 {.repeated section items}
 
   <!--WRAPPER-->
-  
+
   <article id="post-{id}" class="{@|item-classes}" data-item-id="{id}">
-    
+
     <!--MAIN IMAGE-->
 
-    {.main-image?}  
+    {.main-image?}
       <a href="{fullUrl}" class="main-image content-fill">
         <img {@|image-meta} />
       </a>
@@ -51,14 +51,15 @@
     {.or}
 
       <!--MAIN CONTENT-->
-
-      {body}
+      <div class="post">
+        {body}
+      </div>
 
     {.end}
 
     <!--BLOG INJECTION-->
 
-    {postItemInjectCode}    
+    {postItemInjectCode}
 
     <!--CATEGORIES-->
 
@@ -78,13 +79,13 @@
     {@|social-button}
 
     <!--POST META-->
-    
+
     <p class="meta">
       Published on <a href="{fullUrl}"><time datetime="{addedOn|date %F}">{addedOn|date %B %d, %Y}</time></a> by <a href="?author={author.id}">{author.displayName}</a>.
       {.section sourceUrl}
         <a href="{@}" class="source" target="_blank">Source</a>.
       {.end}
-    </p>        
+    </p>
 
     <!--LINK TO COMMENTS-->
 
@@ -106,9 +107,9 @@
   {.or}
     No blog posts yet.
 {.end}
-  
+
 <!--PAGINATION-->
-  
+
 {.if pagination}
   <nav>
 
